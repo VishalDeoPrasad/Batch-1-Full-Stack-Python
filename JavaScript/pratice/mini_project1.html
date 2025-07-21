@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> Calculator </title>
+    </head>
+
+    <body>
+        <input type="number" id="n1" placeholder="Enter First Number">
+        <input type="number" id="n2" placeholder="Enter Second Number">
+        <button onclick="addition()"> Add </button>
+        <button onclick="subtraction()"> Sub </button>
+        <button onclick="multiplication()"> Multi </button>
+        <button onclick="division()"> Div </button>
+        <p id="answer"> </p>
+
+        <script>
+            function addition(){
+                let num1 = parseFloat(document.getElementById("n1").value);
+                let num2 = parseFloat(document.getElementById("n2").value);
+                let ans = num1+num2;
+
+                document.getElementById("answer").innerText = "Sum = " + ans;
+            }
+            function subtraction(){
+                let num1 = parseFloat(document.getElementById("n1").value);
+                let num2 = parseFloat(document.getElementById("n2").value);
+                let ans = num1-num2;
+
+                document.getElementById("answer").innerText = "Sum = " + ans;
+            }
+            function multiplication(){
+                let num1 = parseFloat(document.getElementById("n1").value);
+                let num2 = parseFloat(document.getElementById("n2").value);
+                let ans = num1*num2;
+
+                document.getElementById("answer").innerText = "Sum = " + ans;
+            }
+            function division(){
+                let num1 = parseFloat(document.getElementById("n1").value);
+                let num2 = parseFloat(document.getElementById("n2").value);
+                let ans = num1/num2;
+
+                document.getElementById("answer").innerText = "Sum = " + ans;
+            }
+        </script>
+    
+    </body>
+</html>

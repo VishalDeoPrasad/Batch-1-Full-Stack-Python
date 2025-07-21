@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> Website </title>
+    </head>
+
+    <body>
+        <h2> Enter Your Name: </h1>
+        <input type="text" id="name">
+        <button onclick="showName()"> Submit </button>
+        <p id="output"> </p>
+        
+        <script>
+            function showName(){
+                let full_name = document.getElementById("name").value;
+                document.getElementById("output").innerText="My name is: "+full_name; 
+            }
+        </script>
+
+    </body>
+</html>
