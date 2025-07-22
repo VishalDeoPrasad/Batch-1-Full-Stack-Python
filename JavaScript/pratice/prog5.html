@@ -6,15 +6,16 @@
     <body>
         <h2> Enter Your Name: </h1>
         <input type="text" id="name">
-        <button onclick="showName()"> Submit </button>
+        <button onclick="showName()"> Show Me </button>
         <p id="output"> </p>
-        
+
         <script>
             function showName(){
-                let full_name = document.getElementById("name").value;
-                document.getElementById("output").innerText="My name is: "+full_name; 
+                let full_name = document.getElementById('name').value;
+                document.getElementById('output').innerText = "My name is: "+ full_name;
             }
         </script>
+        
 
     </body>
 </html>
