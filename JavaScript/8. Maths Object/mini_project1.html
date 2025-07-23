@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+</head>
+<body>
+    <h1> 🕹️Guess the Number Game </h1>
+    <label> Enter your guess: </label>
+    <input type="number" id="my_guess"> <br><br> &nbsp; &nbsp; &nbsp; &nbsp;
+    <button onclick="checkGuess()"> Check My Guess </button>
+
+    <p id="output"> </p>
+
+    <script>
+        function checkGuess(){
+            let comp_guess = Math.floor(Math.random() * 10);
+            
+            let guess = document.getElementById('my_guess').value;
+            if (guess==comp_guess){
+                document.getElementById("output").innerText = "Congrat! You guess it Right!";
+            }
+            else{
+                document.getElementById("output").innerText = "Wrong Guess Try Again!";
+            }
+        }
+    </script>
+</body>
+</html>

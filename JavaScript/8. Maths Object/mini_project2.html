@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even Odd checker</title>
+</head>
+<body>
+    <h1> Even Odd Checker Game🎮</h1>
+    <label> Enter a Number: </label>
+    <input type="number" id="num" placeholder="Only number allowed">
+    <button onclick="even_odd_checker()"> Check your number!</button>
+    <p id="output"> </p>
+
+    <script>
+        function even_odd_checker(){
+            let number = document.getElementById('num').value;
+
+            if (number % 2 == 0){
+                document.getElementById('output').innerText = "Even Number: "+number;
+            }
+            else{
+                document.getElementById('output').innerText = "Odd Number: "+number;
+            }
+        }
+    </script>
+</body>
+</html>
