@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h2> Simple Calculator </h2>
+    <input type="number" id="n1" placeholder="Enter first Number">
+    <input type="number" id="n2" placeholder="Enter second Number">
+
+    <button onclick="addition()"> ADD➕</button>
+    <button onclick="substration()"> SUB➖</button>
+    <button onclick="multiplication()"> MULTI✖️</button>
+    <button onclick="division()"> DIV➗</button>
+
+    <p id="output"> </p>
+
+    <script>
+        function addition(){
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+            ans = num1+num2;
+            document.getElementById('output').innerHTML = "<b>Addition:</b> "+ans;
+        }
+
+        const substration = () => {
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+            ans = num1-num2;
+            document.getElementById('output').innerText = "Subtraction: "+ans;
+        }
+
+        const multiplication = () => {
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+            ans = num1*num2;
+            document.getElementById('output').innerText = "Multiplication: "+ans;
+        }
+
+        function division(){
+            let num1 = parseFloat(document.getElementById('n1').value);
+            let num2 = parseFloat(document.getElementById('n2').value);
+            ans = num1/num2;
+            document.getElementById('output').innerText = "Division: "+ans;
+        }
+    </script>
+
+</body>
+</html>

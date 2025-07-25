@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OTP</title>
+</head>
+<body>
+    <h2> OTP Generator!</h2>
+    <button onclick="generateOTP()"> Click to get OTP </button>
+    <p id="output"> </p>
+
+    <script>
+        function generateOTP(){
+            let otp="";
+            for (let i=0; i<6; i++){
+                let n = Math.floor(Math.random() * 10);
+                otp = otp + n;
+            }
+            document.getElementById('output').innerText = "Your 6-digit OTP is ready: "+ otp
+        }
+    </script>
+</body>
+</html>
