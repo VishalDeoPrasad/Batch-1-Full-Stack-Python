@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <style>
+        body { 
+            text-align: center;
+        }
+        button{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="output"> 0 </h1>   
+    <button onclick="increament()"> Increament </button>
+    <button onclick="decrement()"> Decrement </button> 
+
+    <script>
+        let cnt = 0
+        function increament(){
+            cnt++;
+            document.getElementById('output').innerText = cnt;
+        }
+
+        function decrement(){
+            cnt--;
+            document.getElementById('output').innerText = cnt;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-do</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1> To-Do Application </h1>
+        <input type="text" id="my_task" placeholder="Enter Your Task!"> 
+        <button onclick="addTask()"> Add Task </button>
+        <ul id="output"> </ul>
+    </div>
+
+    <script>
+        function addTask(){
+            let temp = document.getElementById('my_task').value;
+            let li = document.createElement('li');
+            li.innerText = temp;
+            document.getElementById('output').appendChild(li);
+            document.getElementById('my_task').value="";
+        }
+    </script>
+</body>
+</html>

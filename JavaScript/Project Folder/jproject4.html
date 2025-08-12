@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <title>Time</title>
+    <style>
+        body{ text-align: center; }
+    </style>
+</head>
+<body>
+    <h1 id="output1"> </h1>
+    <h2 id="output2"> </h2>
+    <h3 id="output3"> </h3>
+    <script>
+        function time(){
+            let now = new Date;
+            now_date = now.toLocaleDateString();
+            now_time = now.toLocaleTimeString();
+            now_day = now.toLocaleDateString('en-US', {weekday: 'long'});
+            document.getElementById('output1').innerText = now_date; 
+            document.getElementById('output2').innerText = now_time; 
+            document.getElementById('output3').innerText = now_day; 
+        }
+        setInterval(time, 1000);
+        time();
+    </script>
+</body>
+</html>

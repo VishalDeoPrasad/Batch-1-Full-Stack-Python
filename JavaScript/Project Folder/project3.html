@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulb</title>
+    <style>
+        body{ text-align: center; }
+    </style>
+</head>
+<body>
+    <img id='output' src="on_img.png">  <br>
+    <button onclick="bulbON()"> Turn ON</button>
+    <button onclick="bulbOFF()"> Turn OFF</button>
+
+    <script>
+        function bulbON(){
+            document.getElementById('output').src='on_img.png';
+        }
+        function bulbOFF(){
+            document.getElementById('output').src='off_img.png';
+        }
+    </script>
+</body>
+</html>
