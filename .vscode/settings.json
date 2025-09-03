@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "python-envs.pythonProjects": [
+        {
+            "path": "Python/14. Exception Handling/prog18.py",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
