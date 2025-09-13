@@ -1,10 +1,10 @@
-# Build-in module
+import cal
 
-import math
-print(math.factorial(5))  
+print(cal.addition(10,20))
 
-import os
-print(os.getcwd()) 
+print(cal.subtration(10,20))
 
-import datetime
-print(datetime.datetime.now())
+print(cal.multipication(10,20))
+
+print(cal.division(10,20))
+
